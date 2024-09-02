@@ -1,0 +1,16 @@
+create table if not exists flattened_bank_risk_rating(
+country_code varchar(255) not null,
+risk_rating_meta varchar(255) null,
+origin varchar(255) null,
+flat_risk_rating_control varchar(255) null,
+premium_payment varchar(255) null,
+automatic_source char null,
+origin_indicator varchar(255) null,
+manual_source varchar(255) null,
+manual_source_indicator varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint flattened_bank_risk_rating_pk primary key(country_code));

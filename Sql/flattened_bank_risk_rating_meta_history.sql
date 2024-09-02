@@ -1,0 +1,16 @@
+create table if not exists flattened_bank_risk_rating_meta_history(
+history_date varchar(255) not null,
+metadata_crated_date varchar(255) null,
+risk_rating_meta varchar(255) null,
+origin  varchar(255) null,
+audit_flag varchar(255) null,
+audit_done char null,
+audit_type varchar(255) null,
+acted_by varchar(255) null,
+audit_source varchar(255) null,
+updated_from_source varchar(255) null,
+removed_from_source varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint flattened_bank_risk_rating_meta_history_pk primary key(history_date));
